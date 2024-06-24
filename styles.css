@@ -84,7 +84,49 @@ a:hover {
   color: rgb(65, 207, 112);
 }
 
-.clear {
+
+
+#recipe-list {
+  display: flex;
+  flex-direction: row; 
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#pagination {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+
+#prevPageBtn {
+  width: 30%;
+}
+
+#nextPageBtn {
+  width: 30%
+}
+
+
+
+.clear-box {
+  display: flex;
+  justify-content: center;
+}
+
+
+#clear {
   width: 20%;
   background-color: rgb(61, 61, 61);
+}
+
+#clear:hover {
+  background-color: rgb(210, 210, 210);
+  color: rgb(61, 61, 61);
+  border: 2px solid rgb(61, 61, 61);
 }
