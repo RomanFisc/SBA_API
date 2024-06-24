@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function(){
     let totalRecipes = 0;
 
     async function getRecipes(dietPreference) {
-        const applicationId = '968509fe'; // Replace with your Edamam app ID
-        const applicationKey = 'd6ce1fe3e7091aa8c5fd6f6dee111055'; // Replace with your Edamam app key
+        const applicationId = '968509fe'; 
+        const applicationKey = 'd6ce1fe3e7091aa8c5fd6f6dee111055';
         const baseUrl = 'https://api.edamam.com/search';
         const from = (currentPage - 1) * perPage + 1;
         const to = currentPage * perPage;
