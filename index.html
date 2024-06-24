@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBA 316</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main">
+    <div id="content">
+      <div class="header">
+        <h1>Select a recipe based on different dietary needs</h1>
+      </div>
+      <form id="recipe">
+        <select required>
+          <option value="none">Please Select a recipe type</option>
+          <option value="gluten-free">Gluten-Free</option>
+          <option value="dairy-free">Dairy-Free</option>
+          <option value="paleo">Paleo</option>
+          <option value="dairy-free">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+        </select>
+        <div id="checkbox-container">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit">Generate Recipe</button>
+      </form>
+    </div>
+    <div id="form-error">
+    </div>
+    <div id="recipe-output" style="display: none;">
+    </div>  
+    <button class="clear">Clear recipe</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
